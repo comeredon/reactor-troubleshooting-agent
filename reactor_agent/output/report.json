@@ -1,0 +1,712 @@
+{
+  "analysis_timestamp": "2026-04-22T14:06:53.958877+00:00",
+  "csv_file": "data/reactor_sensors.csv",
+  "provider": "groq",
+  "model": "",
+  "sensor_summary": {
+    "total_rows": 120,
+    "time_range": {
+      "start": "2025-01-15 08:00:00",
+      "end": "2025-01-15 11:58:00"
+    },
+    "peak_temp_celsius": 101.24,
+    "peak_temp_timestamp": "2025-01-15 09:04:00"
+  },
+  "anomalies": {
+    "total": 97,
+    "by_type": {
+      "delta_t": 66,
+      "feed_b_step": 1,
+      "ramp_rate": 2,
+      "agitator_low": 9,
+      "temp_alarm": 12,
+      "temp_interlock": 7
+    },
+    "details": [
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:00:00",
+        "value": 15.43,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.43\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:02:00",
+        "value": 15.28,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.28\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:04:00",
+        "value": 15.11,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.11\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:06:00",
+        "value": 15.01,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.01\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:44:00",
+        "value": 15.36,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.36\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "feed_b_step",
+        "timestamp": "2025-01-15 08:44:00",
+        "value": 10.19,
+        "threshold": 5.0,
+        "message": "Feed B step change 10.19 kg/h (prev=20.30, now=30.49)"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:46:00",
+        "value": 15.21,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.21\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:48:00",
+        "value": 15.33,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.33\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "ramp_rate",
+        "timestamp": "2025-01-15 08:50:00",
+        "value": 2.225,
+        "threshold": 1.5,
+        "message": "Ramp rate 2.225\u00b0C/min exceeds limit \u00b11.5\u00b0C/min"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 08:50:00",
+        "value": 275.34,
+        "threshold": 280,
+        "message": "Agitator 275.3 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:50:00",
+        "value": 16.34,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.34\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 08:52:00",
+        "value": 96.93,
+        "threshold": 92.0,
+        "message": "Reactor temp 96.93\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "ramp_rate",
+        "timestamp": "2025-01-15 08:52:00",
+        "value": 2.85,
+        "threshold": 1.5,
+        "message": "Ramp rate 2.850\u00b0C/min exceeds limit \u00b11.5\u00b0C/min"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 08:52:00",
+        "value": 260.72,
+        "threshold": 280,
+        "message": "Agitator 260.7 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:52:00",
+        "value": 18.48,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.48\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 08:54:00",
+        "value": 97.79,
+        "threshold": 92.0,
+        "message": "Reactor temp 97.79\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 08:54:00",
+        "value": 259.63,
+        "threshold": 280,
+        "message": "Agitator 259.6 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:54:00",
+        "value": 18.67,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.67\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 08:56:00",
+        "value": 98.46,
+        "threshold": 92.0,
+        "message": "Reactor temp 98.46\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 08:56:00",
+        "value": 98.46,
+        "threshold": 98.0,
+        "message": "Reactor temp 98.46\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 08:56:00",
+        "value": 257.81,
+        "threshold": 280,
+        "message": "Agitator 257.8 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:56:00",
+        "value": 18.79,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.79\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 08:58:00",
+        "value": 98.71,
+        "threshold": 92.0,
+        "message": "Reactor temp 98.71\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 08:58:00",
+        "value": 98.71,
+        "threshold": 98.0,
+        "message": "Reactor temp 98.71\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 08:58:00",
+        "value": 256.45,
+        "threshold": 280,
+        "message": "Agitator 256.4 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 08:58:00",
+        "value": 18.7,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.70\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:00:00",
+        "value": 100.01,
+        "threshold": 92.0,
+        "message": "Reactor temp 100.01\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 09:00:00",
+        "value": 100.01,
+        "threshold": 98.0,
+        "message": "Reactor temp 100.01\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 09:00:00",
+        "value": 258.92,
+        "threshold": 280,
+        "message": "Agitator 258.9 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:00:00",
+        "value": 18.78,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.78\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:02:00",
+        "value": 100.72,
+        "threshold": 92.0,
+        "message": "Reactor temp 100.72\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 09:02:00",
+        "value": 100.72,
+        "threshold": 98.0,
+        "message": "Reactor temp 100.72\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 09:02:00",
+        "value": 255.72,
+        "threshold": 280,
+        "message": "Agitator 255.7 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:02:00",
+        "value": 18.58,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.58\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:04:00",
+        "value": 101.24,
+        "threshold": 92.0,
+        "message": "Reactor temp 101.24\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 09:04:00",
+        "value": 101.24,
+        "threshold": 98.0,
+        "message": "Reactor temp 101.24\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 09:04:00",
+        "value": 265.16,
+        "threshold": 280,
+        "message": "Agitator 265.2 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:04:00",
+        "value": 18.56,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 18.56\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:06:00",
+        "value": 100.87,
+        "threshold": 92.0,
+        "message": "Reactor temp 100.87\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 09:06:00",
+        "value": 100.87,
+        "threshold": 98.0,
+        "message": "Reactor temp 100.87\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "agitator_low",
+        "timestamp": "2025-01-15 09:06:00",
+        "value": 279.34,
+        "threshold": 280,
+        "message": "Agitator 279.3 RPM below minimum 280 RPM"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:06:00",
+        "value": 17.96,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 17.96\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:08:00",
+        "value": 99.45,
+        "threshold": 92.0,
+        "message": "Reactor temp 99.45\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_interlock",
+        "timestamp": "2025-01-15 09:08:00",
+        "value": 99.45,
+        "threshold": 98.0,
+        "message": "Reactor temp 99.45\u00b0C exceeds interlock threshold 98.0\u00b0C \u2014 TRP-12 required"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:08:00",
+        "value": 17.0,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 17.00\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:10:00",
+        "value": 97.23,
+        "threshold": 92.0,
+        "message": "Reactor temp 97.23\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 09:10:00",
+        "value": 15.89,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.89\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:12:00",
+        "value": 94.67,
+        "threshold": 92.0,
+        "message": "Reactor temp 94.67\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "temp_alarm",
+        "timestamp": "2025-01-15 09:14:00",
+        "value": 92.15,
+        "threshold": 92.0,
+        "message": "Reactor temp 92.15\u00b0C exceeds alarm threshold 92.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:18:00",
+        "value": 15.03,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.03\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:20:00",
+        "value": 15.08,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.08\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:22:00",
+        "value": 15.01,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.01\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:30:00",
+        "value": 15.15,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.15\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:32:00",
+        "value": 15.25,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.25\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:34:00",
+        "value": 15.27,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.27\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:36:00",
+        "value": 15.24,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.24\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:38:00",
+        "value": 15.23,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.23\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:40:00",
+        "value": 15.27,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.27\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:42:00",
+        "value": 15.31,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.31\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:44:00",
+        "value": 15.33,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.33\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:46:00",
+        "value": 15.35,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.35\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:48:00",
+        "value": 15.42,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.42\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:50:00",
+        "value": 15.54,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.54\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:52:00",
+        "value": 15.62,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.62\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:54:00",
+        "value": 15.63,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.63\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:56:00",
+        "value": 15.55,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.55\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 10:58:00",
+        "value": 15.48,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.48\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:00:00",
+        "value": 15.52,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.52\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:02:00",
+        "value": 15.67,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.67\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:04:00",
+        "value": 15.85,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.85\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:06:00",
+        "value": 15.92,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.92\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:08:00",
+        "value": 15.87,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.87\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:10:00",
+        "value": 15.77,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.77\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:12:00",
+        "value": 15.76,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.76\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:14:00",
+        "value": 15.83,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.83\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:16:00",
+        "value": 15.95,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 15.95\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:18:00",
+        "value": 16.03,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.03\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:20:00",
+        "value": 16.06,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.06\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:22:00",
+        "value": 16.07,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.07\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:24:00",
+        "value": 16.11,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.11\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:26:00",
+        "value": 16.15,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.15\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:28:00",
+        "value": 16.16,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.16\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:30:00",
+        "value": 16.14,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.14\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:32:00",
+        "value": 16.13,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.13\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:34:00",
+        "value": 16.21,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.21\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:36:00",
+        "value": 16.35,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.35\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:38:00",
+        "value": 16.48,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.48\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:40:00",
+        "value": 16.49,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.49\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:42:00",
+        "value": 16.4,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.40\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:44:00",
+        "value": 16.31,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.31\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:46:00",
+        "value": 16.33,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.33\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:48:00",
+        "value": 16.47,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.47\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:50:00",
+        "value": 16.64,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.64\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:52:00",
+        "value": 16.73,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.73\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:54:00",
+        "value": 16.7,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.70\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:56:00",
+        "value": 16.64,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.64\u00b0C exceeds max 15.0\u00b0C"
+      },
+      {
+        "anomaly_type": "delta_t",
+        "timestamp": "2025-01-15 11:58:00",
+        "value": 16.62,
+        "threshold": 15.0,
+        "message": "\u0394T (reactor\u2212jacket) = 16.62\u00b0C exceeds max 15.0\u00b0C"
+      }
+    ]
+  },
+  "root_cause_analysis": "[LLM unavailable \u2014 GROQ_API_KEY not set]",
+  "recommendations": "[LLM unavailable \u2014 GROQ_API_KEY not set]",
+  "errors": [
+    "analyze_node LLM call failed: GROQ_API_KEY not set"
+  ]
+}
